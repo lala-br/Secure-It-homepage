@@ -7,7 +7,7 @@ This repository contains the **home page** of the Secure-It project.
 ---
 
 ## 🌐 Live Demo
-[*(https://lala-br.github.io/Secure-It-homepage/)*]
+[*https://lala-br.github.io/Secure-It-homepage/*]
 
 ---
 
