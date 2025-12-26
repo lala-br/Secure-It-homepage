@@ -1,0 +1,180 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e0e7ff;
+    line-height: 1.6;
+}
+
+/* Container to hold Main and Aside side-by-side */
+.container {
+    display: flex; 
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px; 
+    padding: 0 20px;
+}
+
+.main-content {
+    flex: 3; 
+    min-width: 0;
+}
+
+/* ===== MAIN HEADER ===== */
+.main-header {
+    background: #1e293b;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #10b981;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #1e293b;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #10b981;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #10b981;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e7ff;
+    font-size: 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #10b981;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f4c3a 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px; /* Added slight rounding to fit the new layout */
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #10b981;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cta-btn:hover {
+    background: #059669;
+}
+
+/* ===== ASIDE (Right Sidebar) ===== */
+.info-aside {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style for individual boxes inside the sidebar */
+.aside-box {
+    padding: 20px;
+    background: #f4fff7;
+    color: #0f172a;
+    border-left: 5px solid #10b981;
+    border-radius: 8px;
+}
+
+.aside-box h3 {
+    color: #059669;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+/* ===== LEARNING SECTION & ARTICLES ===== */
+.learning-section{
+    display:block;
+}
+
+.learning-section h2 {
+    margin-bottom: 20px;
+    color: #10b981;
+}
+
+.content-card {
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px; 
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    background: #0f4c3a;
+    border-color: #10b981;
+    transform: translateX(5px); 
+}
+
+.content-card h3 {
+    color: #10b981;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    border-top: 2px solid #10b981;
+    color: #e0e7ff;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
