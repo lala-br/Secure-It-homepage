@@ -54,3 +54,8 @@ This behavior is implemented using **Flexbox** and a breakpoint at `768px`.
 
 ---
 
+## 👥 Contributors
+
+- Noa Prigan  
+- Wassim Atrach
+- Lalana Brosh
