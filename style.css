@@ -177,4 +177,8 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .hero {
+        margin-bottom: 20px;
+    }
 }
